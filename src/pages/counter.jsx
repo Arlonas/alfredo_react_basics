@@ -39,6 +39,7 @@ const CounterPage = () => {
     })
   }
   return (
+   <Center>
     <Box maxWidth="2xl" padding="16">
       <Flex alignItems="center" marginTop="10">
         <Button onClick={() => changeCountValue("decrement")} marginRight="4">
@@ -58,7 +59,9 @@ const CounterPage = () => {
       </Flex>
       <Button onClick={() => resetCounter()}marginTop="4">Reset Counter</Button>
     </Box>
+   </Center> 
   );
 };
 
 export default CounterPage;
+
